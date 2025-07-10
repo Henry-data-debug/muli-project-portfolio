@@ -39,7 +39,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl text-gray-900">
-              DS Portfolio
+              Henry Muli
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
@@ -73,7 +73,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">Data Scientist & Workflow Automation Specialist</h3>
+              <h3 className="font-bold text-lg mb-4">Henry Muli - Data Scientist & Workflow Automation Specialist</h3>
               <p className="text-gray-400">
                 Transforming business processes through intelligent automation and data-driven insights.
               </p>
@@ -90,11 +90,11 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Get In Touch</h4>
               <div className="space-y-2">
-                <a href="mailto:contact@example.com" className="flex items-center text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:wambuahenry15@gmail.com" className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Mail className="h-4 w-4 mr-2" />
-                  contact@example.com
+                  wambuahenry15@gmail.com
                 </a>
-                <a href="#" className="flex items-center text-gray-400 hover:text-white transition-colors">
+                <a href="https://wa.me/254791371301" className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <MessageSquare className="h-4 w-4 mr-2" />
                   WhatsApp Consultation
                 </a>
@@ -102,7 +102,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Data Scientist & Workflow Automation Specialist. All rights reserved.</p>
+            <p>&copy; 2024 Henry Muli - Data Scientist & Workflow Automation Specialist. All rights reserved.</p>
           </div>
         </div>
       </footer>
