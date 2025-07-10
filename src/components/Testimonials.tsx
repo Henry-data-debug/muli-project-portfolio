@@ -6,52 +6,46 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Mitchell",
-      position: "Operations Director",
-      company: "TechFlow Solutions",
-      content: "The automation workflows transformed our entire invoice processing system. What used to take our team 3 days now happens in 30 minutes. The ROI was immediate and the reliability is outstanding.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b469?q=80&w=100&h=100&fit=crop&crop=face"
+      name: "Grace Wanjiku",
+      position: "Operations Manager",
+      company: "Nairobi Tech Hub",
+      content: "Henry's automation workflows transformed our entire invoice processing system. What used to take our team 3 days now happens in 30 minutes. The ROI was immediate and the reliability is outstanding.",
+      rating: 5
     },
     {
-      name: "Michael Chen",
+      name: "Peter Kamau",
       position: "CEO",
-      company: "DataDriven Corp",
-      content: "Their WhatsApp integration revolutionized our customer service. We now handle 10x more inquiries with the same team size. The automated responses are so natural, customers love the instant support.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&h=100&fit=crop&crop=face"
+      company: "DataLink Kenya",
+      content: "The WhatsApp integration revolutionized our customer service. We now handle 10x more inquiries with the same team size. The automated responses are so natural, customers love the instant support.",
+      rating: 5
     },
     {
-      name: "Emily Rodriguez",
-      position: "Finance Manager",
-      company: "GrowthCorp Inc",
+      name: "Anne Njeri",
+      position: "Finance Director",
+      company: "GrowthCorp East Africa",
       content: "The Power BI dashboards provide real-time insights that drive our strategic decisions. The automated reporting saves us 20 hours per week and the accuracy is perfect every time.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&fit=crop&crop=face"
+      rating: 5
     },
     {
-      name: "David Thompson",
-      position: "IT Director",
-      company: "InnovateTech",
+      name: "Samuel Kipchoge",
+      position: "IT Manager",
+      company: "InnovateTech Nairobi",
       content: "The SharePoint automation eliminated our document bottlenecks completely. Approval workflows that took weeks now complete in days, and we have full visibility into every step of the process.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&fit=crop&crop=face"
+      rating: 5
     },
     {
-      name: "Lisa Wang",
+      name: "Mary Akinyi",
       position: "Marketing Director",
-      company: "BrandBuilders",
-      content: "Their multi-platform integration connected all our marketing tools seamlessly. Campaign data flows automatically between systems, giving us insights we never had before. Game-changing work!",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&h=100&fit=crop&crop=face"
+      company: "BrandBuilders Kenya",
+      content: "Henry's multi-platform integration connected all our marketing tools seamlessly. Campaign data flows automatically between systems, giving us insights we never had before. Game-changing work!",
+      rating: 5
     },
     {
-      name: "Robert Johnson",
+      name: "John Mutua",
       position: "COO",
-      company: "EfficiencyFirst",
-      content: "The Excel analytics suite they built handles complex financial modeling that used to require expensive software. The automation features save our analysts hours every day while improving accuracy.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&h=100&fit=crop&crop=face"
+      company: "EfficiencyFirst Ltd",
+      content: "The Excel analytics suite Henry built handles complex financial modeling that used to require expensive software. The automation features save our analysts hours every day while improving accuracy.",
+      rating: 5
     }
   ];
 
@@ -63,7 +57,7 @@ const Testimonials = () => {
             Client Testimonials
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from business leaders who have transformed their operations through intelligent automation.
+            Hear from Kenyan business leaders who have transformed their operations through intelligent automation.
           </p>
         </div>
 
@@ -85,11 +79,11 @@ const Testimonials = () => {
                 </div>
                 
                 <div className="flex items-center gap-4 mt-auto">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                    <span className="text-blue-600 font-semibold text-lg">
+                      {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
                     <p className="text-sm text-gray-600">{testimonial.position}</p>
